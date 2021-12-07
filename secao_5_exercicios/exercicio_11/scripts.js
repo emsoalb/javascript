@@ -1,9 +1,14 @@
-//velocidade if/else
+//cnh
 
-let velocidade = prompt("Qual a velocidade atual?");
+let idade = prompt("Qual sua idade?");
+let temCnh = prompt("Você tem CNH? s ou n");
 
-if (velocidade > 80) {
-    console.log("Reduza!! Você está acima da velocidade máxima permitida!!");
-} else {
-    console.log("Muito bem, velocidade OK!");
+if (idade < 18) {
+    console.log("Você não pode dirigir pois é menor de idade");
+}
+else if(temCnh == "n") {
+    console.log("Você não pode dirigir pois não tem CNH");
+}
+else {
+    console.log("Você pode dirigir.");
 }
